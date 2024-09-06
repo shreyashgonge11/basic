@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ASM IBMR</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* New background color */
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #383c41;
+            color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        header img {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            margin: 10px 0;
+            color: #007bff;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        /* About Us Section */
+        #about-us {
+            padding: 60px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        #new-team-members, section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #new-team-members div, section div {
+            margin: 15px;
+            text-align: center;
+            flex: 1 1 calc(33.333% - 30px);
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #new-team-members div:hover, section div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        #new-team-members div img, section div img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #444;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        h3 {
+            margin: 10px 0;
+            color: #555;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            border-top: 2px solid #444;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            #new-team-members div, section div {
+                flex: 1 1 calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            #new-team-members div, section div {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* Screenshot styling */
+        .screenshot {
+            text-align: center;
+            margin: 20px 0;
+            padding: 0 10px;
+        }
+
+        .screenshot img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="https://cdn.prod.website-files.com/63a98d7ca37497b26e5ba22c/6601bb409f39bf7dd65fe36f_download.png" alt="ASM IBMR Logo">
+        <h1>ASM IBMR MCA Department</h1>
+    </header>
+
+    <!-- About Us Section -->
+    <div id="about-us">
+        <div class="container">
+            <div id="new-team-members">
+                <h1>MCA Department</h1>
+                <div>
+                    <img src="images/Director sir.jpg" alt="Dr. V.P. Pawar Sir">
+                    <h3>Dr. V.P. Pawar Sir (Director)</h3>
+                </div>
+                <div>
+                    <img src="images/HOD sir.jpg" alt="Prof. Milind Deshkar Sir">
+                    <h3>Prof. Milind Deshkar Sir (HOD)</h3>
+                </div>
+            </div>
+
+            <h1>Team Ganpati Decoration</h1>
+            <section>
+                <div>
+                    <img src="images/image1.jpg" alt="Ankita Munde">
+                    <h3>Ankita Munde (Team Leader)</h3>
+                </div>
+                <div>
+                    <img src="images/image2.jpg" alt="Priya Sadakal">
+                    <h3>Priya Sadakal</h3>
+                </div>
+                <div>
+                    <img src="images/image3.jpg" alt="Tanvi">
+                    <h3>Tanvi</h3>
+                </div>
+                <div>
+                    <img src="images/image4.jpg" alt="Mohammad">
+                    <h3>Mohammad</h3>
+                </div>
+                <div>
+                    <img src="images/image5.jpg" alt="Pravin Padul">
+                    <h3>Pravin Padul</h3>
+                </div>
+                <div>
+                    <img src="images/image6.jpg" alt="Vikas Gawande">
+                    <h3>Vikas Gawande</h3>
+                </div>
+                <div>
+                    <img src="images/image10.png" alt="Pratik Tarate">
+                    <h3>Pratik Tarate</h3>
+                </div>
+                <div>
+                    <img src="images/image8.jpg" alt="Adesh Narwade">
+                    <h3>Adesh Narwade</h3>
+                </div>
+                <div>
+                    <img src="images/image9.jpg" alt="Harsh Jadhao">
+                    <h3>Harsh Jadhao</h3>
+                </div>
+                <div>
+                    <img src="images/photo11.jpeg" alt="Shubham Singh">
+                    <h3>Shubham Singh</h3>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Screenshot Section -->
+    <div class="screenshot">
+      <h2>Background Creation for Ganpati Bappa</h2>
+      <img src="Behind/image1.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image2.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image10.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image4.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image5.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image12.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image7.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image8.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image9.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image3.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image11.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image6.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image13.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image14.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image15.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+  </div>
+
+    <footer>
+        <p>&copy; 2024 ASM IBMR MCA Department. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:shreyashgonge2411@gmail.com">shreyashgonge2411@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
