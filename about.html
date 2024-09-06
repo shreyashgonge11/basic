@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e0f7fa; /* New background color */
+            background-color: #e0f7fa;
             color: #333;
         }
 
@@ -75,6 +75,7 @@
             object-fit: cover;
             border: 4px solid #ddd;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            cursor: pointer; /* Show pointer cursor on hover */
         }
 
         h2 {
@@ -129,6 +130,40 @@
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            cursor: pointer; /* Show pointer cursor on hover */
+        }
+
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            margin: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .lightbox .close {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -204,27 +239,46 @@
     <!-- Screenshot Section -->
     <div class="screenshot">
       <h2>Background Creation for Ganpati Bappa</h2>
-      <img src="Behind/image1.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image2.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image10.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image4.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image5.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image12.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image7.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image8.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image9.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image3.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image11.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image6.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image13.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image14.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
-      <img src="Behind/image15.jpg" alt="Decoration Team Working on Ganpati Bappa Background">
+      <img src="Behind/image1.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image2.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image10.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image4.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image5.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image12.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image7.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image8.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image9.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image3.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image11.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image6.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image13.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image14.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
+      <img src="Behind/image15.jpg" alt="Decoration Team Working on Ganpati Bappa Background" onclick="openLightbox(this)">
   </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
 
     <footer>
         <p>&copy; 2024 ASM IBMR MCA Department. All rights reserved.</p>
-        <p>Contact us: <a href="mailto:shreyashgonge2411@gmail.com">shreyashgonge2411@gmail.com</a></p>
+        <p>Contact<a href="mailto:shreyashgonge2411@gmail.com">shreyashgonge2411@gmail.com</a></p>
     </footer>
 
+    <script>
+        function openLightbox(element) {
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'flex';
+            lightboxImg.src = element.src;
+        }
+
+        function closeLightbox() {
+            var lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
